@@ -1,0 +1,14 @@
+{
+  "season": "Autumn / Winter 2026",
+  "curatedOn": "2026-11-18",
+  "sourceTitle": "Vogue: The Top Fall 2026 Color Trends",
+  "sourceDate": "2026-08-21",
+  "sourceUrl": "https://www.vogue.com/article/fall-2026-color-trends",
+  "colors": [
+    {"id":"electric-blue","name":"Electric blue","hex":"#2454E8","aliases":["blue","cobalt","cornflower"],"note":"Go full blue, or let one piece cut through pink and orange.","mood":"BOLD & BRIGHT"},
+    {"id":"vibrant-red","name":"Vibrant red","hex":"#D9244B","aliases":["red","poppy","crimson"],"note":"Wear it with pink for a high-energy clash.","mood":"MAKE AN ENTRANCE"},
+    {"id":"royal-purple","name":"Royal purple","hex":"#7136AE","aliases":["purple","plum","violet","aubergine"],"note":"Let a purple knit or accessory do the talking.","mood":"RICH & PLAYFUL"},
+    {"id":"butter-yellow","name":"Butter yellow","hex":"#EECF57","aliases":["yellow","butter","gold"],"note":"A bright accent beside cobalt or a warm earthy piece.","mood":"A LITTLE SUNSHINE"},
+    {"id":"juicy-peach","name":"Juicy peach","hex":"#F68167","aliases":["peach","coral","orange","tangerine","terracotta"],"note":"Bring warmth to blue, green, or a bold print.","mood":"SWEET WITH BITE"}
+  ]
+}

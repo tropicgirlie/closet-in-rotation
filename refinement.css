@@ -1,0 +1,376 @@
+/* A colourful fashion editorial with quieter surfaces and sharper hierarchy. */
+:root {
+  --paper: #fbf6f0;
+  --card: #fffdf9;
+  --ink: #29222a;
+  --muted: #5f555d;
+  --line: #d9cfc9;
+  --green: #29222a;
+  --green-dark: #a32663;
+  --coral: #b12a67;
+  --gold: #e1b74c;
+  --soft: #f9e9e3;
+  --shadow: none;
+}
+body { background: var(--paper); background-image: none; }
+.editorial-strip { height: 29px; background: #632841; color: #fff6ed; border: 0; justify-content: center; gap: 48px; font-size: 9px; letter-spacing: .19em; }
+.editorial-strip span { display: none; }
+.shell { max-width: 1440px; }
+.topbar { height: 78px; border-bottom: 1px solid #b9aba8; }
+.brand { font-size: 27px; letter-spacing: -.055em; }
+.brand-mark { background: #b12a67; border: 0; transform: none; font-size: 17px; letter-spacing: -.11em; }
+.top-note { color: #6b5d64; font-size: 10px; }
+.side-nav { border-bottom: 1px solid #d7c7c2; }
+.side-nav .nav { min-height: 48px; font-size: 10px; letter-spacing: .13em; }
+.side-nav .nav.active { color: #a32663; box-shadow: inset 0 -2px #a32663; }
+main { padding-top: 34px; }
+.eyebrow, .overline { color: #a32663; font-size: 10px; letter-spacing: .17em; }
+.button { border-radius: 0; min-height: 46px; letter-spacing: .11em; }
+.primary { background: #29222a; border-color: #29222a; }
+.primary:hover { background: #a32663; border-color: #a32663; }
+.secondary { border: 1px solid #76656d; }
+.text, .inline-action { text-decoration-color: #b12a67; }
+.hero { border: 0; border-bottom: 1px solid #c9b8b1; min-height: 470px; margin-bottom: 64px; background-color: #f5e9df; }
+.hero-copy { padding-left: 56px; width: 52%; }
+.hero h1 { font-size: clamp(54px, 5.25vw, 77px); letter-spacing: -.06em; line-height: 1.02; }
+.hero h1 em { color: #b12a67; text-shadow: none; }
+.hero-copy > p { color: #433941; font-size: 16px; max-width: 405px; }
+.hero .button.primary { box-shadow: none; }
+.hero .button.text { background: transparent; }
+.category-edit, .trend-desk, .brand-desk { margin-bottom: 64px; }
+.editorial-heading { margin-bottom: 22px; }
+.editorial-heading h2, .muse-intro h2 { font-size: clamp(38px, 3.7vw, 55px); letter-spacing: -.045em; }
+.editorial-heading h2 em { color: #a32663; }
+.editorial-heading > p { font-weight: 500; color: #65575f; }
+.category-grid { gap: 16px; }
+.category-card { border: 1px solid #e0d6d0; background: #fffdf9; box-shadow: none; }
+.category-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px #4422311b; }
+.category-card img { height: 330px; }
+.category-card span { background: #fffdf9; border-top: 4px solid #b12a67; padding: 16px; }
+.category-card:nth-child(1) span { border-top-color: #a7bd35; }
+.category-card:nth-child(2) span { border-top-color: #bb2e75; }
+.category-card:nth-child(3) span { border-top-color: #2857b9; }
+.category-card:nth-child(4) span { border-top-color: #e07b32; }
+.trend-desk, .brand-desk { border-top: 1px solid #a99a9d; padding-top: 33px; }
+.trend-grid { gap: 13px; }
+.trend-card { border: 0; background-image: none; min-height: 285px; padding: 18px; }
+.trend-card.electric-blue { background: #3157ad; }
+.trend-card.vibrant-red { background: #bc3159; }
+.trend-card.royal-purple { background: #6d438e; }
+.trend-card.butter-yellow { background: #e6c967; }
+.trend-card.juicy-peach { background: #ef906d; }
+.trend-card h3 { font-size: 32px; letter-spacing: -.04em; margin-top: 56px; }
+.trend-card p { font-size: 12px; }
+.trend-card button { border: 1px solid currentColor; letter-spacing: .08em; }
+.brand-intro { font-size: 15px; margin-bottom: 23px; }
+.brand-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.brand-card { background: #fffdf9; border: 1px solid #d8cbc5; box-shadow: none; }
+.brand-card-top { border-bottom: 0; padding: 12px 20px; }
+.brand-card.farm-rio .brand-card-top { background: #d7df80; }
+.brand-card.zimmermann .brand-card-top { background: #e7a9bd; }
+.brand-card.dior .brand-card-top { background: #a9bde5; }
+.brand-card.stine-goya .brand-card-top { background: #f0b47b; }
+.brand-card-body { padding: 25px 25px 20px; }
+.brand-card h3 { font-size: 39px; max-width: 430px; margin: 11px 0 15px; }
+.brand-card p { font-size: 13px; min-height: 0; max-width: 520px; }
+.brand-accessory, .brand-route { border-top-color: #d7cbc6; }
+.brand-accessory span, .brand-route span { font-size: 12px; }
+.brand-card-foot { border-top: 1px solid #d8cbc5; }
+.brand-card-foot button { background: #29222a; }
+.brand-card-foot a { padding: 8px 16px; }
+.brand-card .brand-own { margin-top: 18px; display: flex; gap: 8px; align-items: center; color: #a32663; font-size: 11px; font-weight: 800; }
+.brand-own button { border: 0; border-bottom: 1px solid #a32663; background: transparent; color: inherit; padding: 3px 0; font: inherit; cursor: pointer; }
+.muse-desk { background: #f2d6da; background-image: none; border: 0; min-height: 250px; padding: 35px; margin-bottom: 48px; }
+.muse-intro h2 em { color: #a32663; text-shadow: none; }
+.muse-empty, .muse-card { border: 1px solid #c9adba; box-shadow: none; transform: none; }
+.card { border: 1px solid #d8cbc5; box-shadow: none; }
+.weather-card { background: #f4e4b8; }
+.rotation-card { background: #ead5e4; }
+.look-builder { margin-top: 22px; }
+.look-builder .card-head h2 { font-size: 39px; }
+.look-result { background: #f7eee2; border-color: #d8cbc5; }
+.look-accessory { background: #f0d8e1; border: 0; border-left: 3px solid #a32663; }
+.look-tile { border-color: #e1d6d0; }
+.prompt-card { background: #3157ad; border: 0; }
+.round-arrow { background: #b12a67; border: 0; }
+.sample-note { background: #f8e9bd; border: 0; }
+.intro { background: #f5e4c8; border: 0; }
+.metric, .item-card, .insight-row, .circular-row { border: 1px solid #d8cbc5; box-shadow: none; }
+.metric { box-shadow: none; }
+.item-card:hover { box-shadow: 0 8px 20px #44223117; }
+.filter { border: 1px solid #bcaeb0; }
+.filter.active { background: #a32663; border-color: #a32663; }
+.mobile-nav { background: #fffaf5; border-top: 1px solid #d1c0c2; box-shadow: none; }
+.mobile-nav button.active { background: #f4e1e8; color: #a32663; }
+@media (max-width: 1050px) {
+  .category-card img { height: 250px; }
+  .brand-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 790px) {
+  .hero { height: auto; border: 0; margin-bottom: 48px; }
+  .hero-copy { width: auto; padding: 24px 2px 28px; }
+  .hero h1 { font-size: clamp(50px, 10vw, 76px); }
+  .hero-art { border: 0; border-bottom: 1px solid #c9b8b1; }
+  .category-card img { height: 220px; }
+  .brand-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 590px) {
+  .editorial-strip { justify-content: flex-start; padding: 0 15px; gap: 28px; font-size: 8px; }
+  .topbar { height: 64px; }
+  .brand { font-size: 20px; }
+  .hero { margin-bottom: 42px; }
+  .hero-copy { padding-top: 20px; }
+  .hero h1 { font-size: clamp(48px, 12vw, 65px); }
+  .hero-art { height: 310px; }
+  .category-edit, .trend-desk, .brand-desk { margin-bottom: 43px; }
+  .category-grid { gap: 10px; }
+  .category-card img { height: 185px; }
+  .category-card span { padding: 12px; }
+  .trend-grid { gap: 9px; }
+  .trend-card { min-height: 240px; padding: 14px; }
+  .trend-card h3 { font-size: 28px; margin-top: 36px; }
+  .trend-card:last-child { grid-column: 1 / -1; min-height: 190px; }
+  .trend-card:last-child h3 { margin-top: 18px; max-width: none; }
+  .brand-card-body { padding: 23px 20px 19px; }
+  .brand-card h3 { font-size: 34px; }
+  .muse-desk { padding: 25px 20px; }
+  .look-builder .card-head h2 { font-size: 34px; }
+}
+
+/* A considered luxury edit: colour in the garments, restraint in the frame. */
+.editorial-strip { display: none; }
+.topbar { height: 96px; }
+.brand { font-size: 31px; }
+.brand-mark { display: none; }
+.top-note { letter-spacing: .18em; }
+.side-nav .nav span { display: none; }
+.side-nav .nav { padding: 12px 25px; }
+.primary { background: #642d47; border-color: #642d47; }
+.primary:hover { background: #a32663; border-color: #a32663; }
+.hero {
+  min-height: 575px;
+  height: 575px;
+  background: linear-gradient(90deg, #f9e8d8 0%, #f9e8d8f2 31%, #f9e8d8b0 42%, transparent 57%), url('assets/editorial-picking.webp') center / cover no-repeat;
+}
+.hero-copy { width: 47%; padding: 42px 0 40px 56px; }
+.hero h1 { font-size: clamp(56px, 5.2vw, 76px); margin: 13px 0 20px; }
+.hero-copy > p { max-width: 440px; }
+.hero-actions { margin-top: 22px; }
+.hero-picks { margin-top: 25px; }
+.hero-picks-label { display: block; margin-bottom: 9px; color: #704d58; font-size: 9px; font-weight: 800; letter-spacing: .18em; }
+.hero-picks-row { display: flex; gap: 10px; }
+.hero-pick { width: 69px; height: 91px; display: block; position: relative; overflow: hidden; border: 1px solid #cbbab4; background: #fffdf9; }
+.hero-pick img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.hero-pick span { position: absolute; left: 4px; bottom: 4px; padding: 2px 4px; background: #fffdf9e8; color: #642d47; font-size: 9px; font-weight: 800; }
+.hero-pick:hover { border-color: #a32663; transform: translateY(-2px); }
+.farm-edit { margin: 0 0 68px; padding-top: 34px; border-top: 1px solid #ad9da0; }
+.farm-edit .editorial-heading { margin-bottom: 27px; }
+.farm-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.farm-product { min-width: 0; border-bottom: 1px solid #aa9a9d; }
+.farm-photo { display: block; height: 400px; overflow: hidden; background: #f9f7f2; }
+.farm-photo img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .35s ease; }
+.farm-photo:hover img { transform: scale(1.035); }
+.farm-product-copy { padding: 20px 1px 23px; }
+.farm-index { color: #a32663; font-size: 10px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.farm-product h3 { font: 700 33px/1.04 "Bodoni Moda", Georgia, serif; letter-spacing: -.045em; margin: 9px 0 13px; }
+.farm-product p { color: #50464c; font-size: 13px; line-height: 1.55; margin: 0 0 18px; min-height: 40px; }
+.farm-fabric { display: grid; gap: 5px; padding: 12px 0; border-top: 1px solid #d8cbc5; color: #544c52; font-size: 11px; line-height: 1.5; }
+.farm-fabric strong { color: #642d47; font-size: 9px; letter-spacing: .14em; }
+.farm-actions { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px 15px; margin-top: 14px; }
+.farm-actions button, .farm-actions a { border: 0; border-bottom: 1px solid currentColor; padding: 3px 0 5px; background: none; color: #642d47; font-size: 10px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; text-decoration: none; cursor: pointer; }
+.farm-actions button:hover, .farm-actions a:hover { color: #b12a67; }
+.farm-note { margin: 18px 0 0; max-width: 900px; color: #655a60; font-size: 11px; line-height: 1.5; }
+.category-edit { padding-top: 33px; border-top: 1px solid #ad9da0; }
+.prompt-card { background: #64344e; }
+.weather-card { background: #f5e6ce; }
+.rotation-card { background: #ead9df; }
+@media (max-width: 1050px) {
+  .hero { height: 550px; min-height: 550px; }
+  .hero-copy { width: 52%; padding-left: 38px; }
+  .hero h1 { font-size: 58px; }
+  .farm-photo { height: 350px; }
+}
+@media (max-width: 790px) {
+  .topbar { height: 70px; }
+  .brand { font-size: 24px; }
+  .hero { height: auto; min-height: 0; background: none; }
+  .hero-copy { width: auto; padding: 25px 2px 30px; }
+  .hero h1 { font-size: clamp(50px, 10vw, 70px); }
+  .hero-art { background: #f4d5bb url('assets/editorial-picking.webp') 66% 50% / cover no-repeat; height: 360px; }
+  .farm-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .farm-product:last-child { grid-column: 1 / -1; }
+  .farm-product:last-child .farm-photo { height: 410px; }
+}
+@media (max-width: 590px) {
+  .topbar { height: 65px; }
+  .brand { font-size: 21px; }
+  .top-note { display: none; }
+  .hero-copy { padding-top: 20px; }
+  .hero h1 { font-size: clamp(48px, 12vw, 64px); }
+  .hero-picks { margin-top: 22px; }
+  .hero-art { height: 315px; background-position: 67% 50%; }
+  .farm-edit { margin-bottom: 48px; }
+  .farm-grid { grid-template-columns: 1fr; gap: 25px; }
+  .farm-product:last-child { grid-column: auto; }
+  .farm-photo, .farm-product:last-child .farm-photo { height: 350px; }
+  .farm-product h3 { font-size: 31px; }
+  .mobile-nav button span { display: none; }
+  .mobile-nav button { font-size: 11px; letter-spacing: .1em; }
+}
+
+/* The runway cards show sourced garments and keep the owner's closet one tap away. */
+.category-grid .category-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid #d8cbc5; background: #fffdf9; box-shadow: none; }
+.category-grid .category-card:hover { transform: translateY(-3px); box-shadow: 0 9px 20px #44223116; }
+.category-card .category-image { display: block; height: 326px; overflow: hidden; background: #fff; }
+.category-card .category-image img,
+.category-card:nth-child(2) .category-image img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform .35s ease; }
+.category-card .category-image:hover img { transform: scale(1.035); }
+.category-info { display: flex; flex: 1; flex-direction: column; padding: 17px 17px 19px; border-top: 2px solid #b12a67; }
+.category-card:nth-child(2) .category-info { border-top-color: #a96782; }
+.category-card:nth-child(3) .category-info { border-top-color: #2857b9; }
+.category-card:nth-child(4) .category-info { border-top-color: #d43c35; }
+.category-card .category-kicker { display: block; padding: 0; border: 0; background: none; color: #9d285f; font-size: 9px; font-weight: 800; line-height: 1.45; letter-spacing: .14em; }
+.category-card h3 { margin: 11px 0 7px; font: 700 26px/1.05 "Bodoni Moda", Georgia, serif; letter-spacing: -.05em; }
+.category-card p { margin: 0 0 13px; color: #51454d; font-size: 12px; line-height: 1.5; }
+.category-card small { display: block; margin-top: auto; color: #675c62; font-size: 10px; line-height: 1.45; }
+.category-actions { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; margin-top: 15px; padding-top: 12px; border-top: 1px solid #d8cbc5; }
+.category-actions button, .category-actions a { padding: 2px 0 4px; border: 0; border-bottom: 1px solid currentColor; background: none; color: #642d47; font: 800 9px "DM Sans", sans-serif; letter-spacing: .07em; text-transform: uppercase; text-decoration: none; cursor: pointer; }
+.category-actions button:hover, .category-actions a:hover { color: #b12a67; }
+.category-actions button:focus-visible, .category-actions a:focus-visible, .category-image:focus-visible { outline: 2px solid #a32663; outline-offset: 3px; }
+.category-note { margin: 17px 0 0; max-width: 910px; color: #655a60; font-size: 11px; line-height: 1.55; }
+@media (max-width: 1050px) {
+  .category-card .category-image { height: 255px; }
+  .category-card h3 { font-size: 23px; }
+}
+@media (max-width: 590px) {
+  .category-card .category-image { height: 185px; }
+  .category-info { padding: 12px 10px 14px; }
+  .category-card .category-kicker { font-size: 8px; letter-spacing: .06em; }
+  .category-card h3 { font-size: 20px; }
+  .category-card p { font-size: 11px; margin-bottom: 9px; }
+  .category-card small { font-size: 9px; }
+  .category-actions { gap: 9px; }
+  .category-actions button, .category-actions a { font-size: 8px; }
+}
+
+/* A quieter wordmark and an authentic FARM Rio Europe winter campaign image. */
+.topbar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 94px; }
+.topbar .brand { display: grid; justify-self: start; gap: 0; line-height: 1; text-decoration: none; }
+.brand-name { font: 700 38px/.92 "Bodoni Moda", Georgia, serif; letter-spacing: -.075em; color: #29222a; }
+.brand-comma { color: #a32663; }
+.brand-sub { margin-top: 7px; color: #642d47; font: 800 9px "DM Sans", sans-serif; letter-spacing: .37em; }
+.top-note { justify-self: center; color: #7a646b; font-size: 9px; letter-spacing: .2em; }
+.top-add { justify-self: end; }
+.hero { display: grid; grid-template-columns: 47% 53%; height: auto; min-height: 580px; background: #f7eee5; }
+.hero-copy { width: auto; height: 100%; padding: 45px 44px 45px 56px; background: #f7eee5; }
+.hero h1 { font-size: clamp(58px, 5.1vw, 76px); }
+.hero-art { position: relative; display: block; width: 100%; height: 100%; min-height: 580px; padding: 0; overflow: hidden; border: 0; border-radius: 0; background: #9c7d65 url('https://farmrio.eu/cdn/shop/files/01._HERO-1.jpg?v=1793209328&width=1920') 50% 50% / cover no-repeat; }
+.hero-art::after { content: none; }
+.hero-art:hover { filter: saturate(1.07); }
+.hero-art:focus-visible { outline: 3px solid #a32663; outline-offset: -3px; }
+.hero-credit { position: absolute; right: 17px; bottom: 16px; padding: 8px 11px; background: #fffaf3e8; color: #572d40; font: 800 9px "DM Sans", sans-serif; letter-spacing: .15em; }
+@media (max-width: 1050px) {
+  .hero { height: auto; min-height: 560px; }
+  .hero-copy { padding-left: 37px; padding-right: 25px; }
+  .hero h1 { font-size: 57px; }
+}
+@media (max-width: 790px) {
+  .topbar { grid-template-columns: 1fr auto; height: 73px; }
+  .brand-name { font-size: 29px; }
+  .brand-sub { font-size: 8px; margin-top: 5px; }
+  .top-note { display: none; }
+  .hero { display: block; height: auto; min-height: 0; background: #f7eee5; }
+  .hero-copy { height: auto; padding: 30px 24px 32px; }
+  .hero h1 { font-size: clamp(50px, 10vw, 70px); }
+  .hero-art { height: 360px; min-height: 0; background-position: 50% 50%; }
+}
+@media (max-width: 590px) {
+  .topbar { height: 66px; }
+  .brand-name { font-size: 25px; }
+  .brand-sub { font-size: 7px; letter-spacing: .28em; }
+  .hero-copy { padding: 23px 17px 29px; }
+  .hero h1 { font-size: clamp(48px, 12vw, 64px); }
+  .hero-art { height: 315px; background-position: 49% 50%; }
+  .hero-credit { right: 10px; bottom: 10px; font-size: 8px; }
+}
+
+/* Curved editorial rhythm and a working colour wheel. */
+.hero { border-radius: 18px 18px 46px 18px; }
+.hero-art { border-radius: 0 18px 46px 0; }
+.farm-photo { border-radius: 12px 12px 30px 12px; }
+.category-grid .category-card { border-radius: 12px 12px 28px 12px; }
+.category-card .category-image { border-radius: 11px 11px 0 0; }
+.brand-card { border-radius: 13px 13px 30px 13px; overflow: hidden; }
+.muse-desk { border-radius: 18px 18px 48px 18px; }
+.card, .look-result, .item-card, .metric, .insight-row, .circular-row { border-radius: 15px 15px 29px 15px; }
+.look-tile, .muse-card { border-radius: 12px; overflow: hidden; }
+.button { border-radius: 26px; }
+.button:focus-visible, .wheel-swatch:focus-visible, [data-start-intake]:focus-visible { outline: 3px solid #a32663; outline-offset: 4px; }
+.how-edit { margin: 0 0 68px; padding: 10px 0 39px; border-bottom: 1px solid #ad9da0; }
+.how-edit .editorial-heading { margin-bottom: 34px; }
+.how-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.how-step { position: relative; display: grid; grid-template-columns: 54px 1fr; gap: 13px; min-width: 0; }
+.how-step:not(:last-child)::after { content: '↝'; position: absolute; right: -24px; top: 15px; color: #a32663; font: 30px Georgia, serif; }
+.how-number { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; border: 1px solid #a32663; color: #a32663; font: 700 16px "Bodoni Moda", Georgia, serif; }
+.how-step h3 { margin: 5px 0 9px; font: 700 24px/1.08 "Bodoni Moda", Georgia, serif; letter-spacing: -.04em; }
+.how-step p { margin: 0; max-width: 290px; color: #5d5259; font-size: 12px; line-height: 1.62; }
+.how-actions { display: flex; align-items: center; gap: 11px; flex-wrap: wrap; margin-top: 32px; }
+.how-actions p { max-width: 290px; margin: 0 0 0 auto; color: #70636a; font-size: 10px; line-height: 1.5; }
+.trend-grid { display: block; }
+.colour-wheel-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 56px; max-width: 970px; margin: 10px auto 16px; }
+.colour-wheel-side { display: grid; justify-items: center; min-width: 0; }
+.colour-wheel { position: relative; width: min(100%, 370px); aspect-ratio: 1; border-radius: 50%; background: var(--wheel-colors); box-shadow: 0 16px 34px #542d461d; }
+.colour-wheel::before { content: ''; position: absolute; inset: 5px; border: 2px solid #fff9; border-radius: 50%; pointer-events: none; }
+.wheel-centre { position: absolute; inset: 21%; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%; background: #fffaf4; box-shadow: 0 0 0 8px #fffaf491; color: #642d47; text-align: center; }
+.wheel-centre span, .wheel-centre small { font: 800 9px "DM Sans", sans-serif; letter-spacing: .15em; }
+.wheel-centre strong { margin: 12px 0 8px; font: 700 42px/.9 "Bodoni Moda", Georgia, serif; letter-spacing: -.07em; }
+.wheel-swatch { position: absolute; z-index: 2; left: var(--x); top: var(--y); width: 55px; height: 55px; padding: 0; border: 5px solid #fffaf4; border-radius: 50%; background: var(--swatch); box-shadow: 0 3px 11px #2a14294f; transform: translate(-50%, -50%); cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.wheel-swatch:hover, .wheel-swatch.is-selected { transform: translate(-50%, -50%) scale(1.17); box-shadow: 0 0 0 3px #642d47, 0 6px 16px #2a14294f; }
+.wheel-instruction { margin: 20px 0 0; color: #70636a; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; text-align: center; }
+.colour-story { position: relative; padding: 23px 0 25px 37px; border-left: 1px solid #c9bbb8; }
+.colour-story::before { content: ''; position: absolute; top: 24px; bottom: 24px; left: -3px; width: 5px; border-radius: 8px; background: var(--story-colour); }
+.colour-story-index { color: #9b285f; font-size: 10px; font-weight: 800; letter-spacing: .13em; }
+.colour-story-title { display: flex; align-items: center; gap: 15px; margin-top: 20px; }
+.colour-story-dot { flex: none; width: 25px; height: 25px; border-radius: 50%; background: var(--story-colour); }
+.colour-story h3 { margin: 0; font: 700 clamp(45px, 4.2vw, 68px)/.95 "Bodoni Moda", Georgia, serif; letter-spacing: -.065em; }
+.colour-story > p { max-width: 330px; margin: 20px 0 28px; color: #50464c; font-size: 15px; line-height: 1.55; }
+.colour-story-count { display: flex; align-items: center; gap: 13px; padding-top: 16px; border-top: 1px solid #d6c9c6; }
+.colour-story-count strong { color: #642d47; font: 700 42px/.9 "Bodoni Moda", Georgia, serif; }
+.colour-story-count span { max-width: 200px; color: #62565e; font-size: 11px; line-height: 1.4; }
+.colour-story .button { margin-top: 25px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 1050px) {
+  .how-steps { gap: 18px; }
+  .how-step { grid-template-columns: 43px 1fr; gap: 9px; }
+  .how-number { width: 43px; height: 43px; }
+  .how-step h3 { font-size: 21px; }
+  .colour-wheel-layout { gap: 28px; }
+}
+@media (max-width: 790px) {
+  .hero { border-radius: 16px 16px 30px 16px; overflow: hidden; }
+  .hero-art { border-radius: 0 0 30px 16px; }
+  .how-steps { grid-template-columns: 1fr; gap: 22px; }
+  .how-step { grid-template-columns: 52px 1fr; gap: 15px; }
+  .how-number { width: 52px; height: 52px; }
+  .how-step:not(:last-child)::after { content: none; }
+  .how-step p { max-width: 600px; }
+  .how-actions p { flex-basis: 100%; max-width: none; margin-left: 0; }
+  .colour-wheel-layout { gap: 24px; }
+  .colour-wheel { width: min(100%, 320px); }
+  .wheel-centre strong { font-size: 34px; }
+}
+@media (max-width: 590px) {
+  .how-edit { margin-bottom: 45px; padding-bottom: 29px; }
+  .how-edit .editorial-heading { margin-bottom: 25px; }
+  .how-actions .button { width: 100%; }
+  .colour-wheel-layout { grid-template-columns: 1fr; gap: 13px; }
+  .colour-wheel { width: min(calc(100% - 20px), 315px); }
+  .wheel-instruction { margin-top: 18px; }
+  .colour-story { margin-top: 12px; padding: 16px 0 20px 21px; }
+  .colour-story h3 { font-size: 48px; }
+  .colour-story > p { margin: 15px 0 20px; }
+  .colour-story .button { margin-top: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wheel-swatch { transition: none; }
+}

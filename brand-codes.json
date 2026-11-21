@@ -1,0 +1,46 @@
+{
+  "curatedOn": "2026-11-18",
+  "note": "Independent style interpretations. Brand names identify inspiration, not affiliation or product recommendations.",
+  "codes": [
+    {
+      "id": "farm-rio",
+      "brand": "FARM Rio",
+      "label": "Rio meets the countryside",
+      "statement": "A loud colour or print against an easy, lived-in shape. Try a vivid dress with practical shoes, or clash two colours you already love.",
+      "accessory": "Finish with your brightest scarf, woven bag, or a bold earring.",
+      "route": "Start with one expressive piece you already own. Change the accessory; if a gap remains, consider a well-made secondhand piece.",
+      "signals": ["lime", "orange", "tangerine", "fuchsia", "pink", "red", "yellow", "print", "pattern"],
+      "sourceUrl": "https://farmrio.com/pages/about"
+    },
+    {
+      "id": "zimmermann",
+      "brand": "Zimmermann",
+      "label": "Romantic volume, sharp colour",
+      "statement": "Let a dress or soft blouse carry the shape, then ground it with a strong second colour and an everyday shoe.",
+      "accessory": "Add a defined belt, sculptural earring, or a small bag with presence.",
+      "route": "Restyle a dress with a belt or layer. Inspect seams, fabric and care before adding another piece.",
+      "signals": ["dress", "blouse", "linen", "purple", "butter", "yellow", "pink", "scarf"],
+      "sourceUrl": "https://www.zimmermann.com/en-ae/our-story"
+    },
+    {
+      "id": "dior",
+      "brand": "Dior",
+      "label": "The shoe is the statement",
+      "statement": "Build a simple colour story, then let an embellished or contrasting shoe be the point of view.",
+      "accessory": "Echo the shoe with one earring, scarf, or bag detail; keep the rest useful and wearable.",
+      "route": "Let the most expressive shoes you own lead. For another pair, consider repairability and the wears you can realistically give it.",
+      "signals": ["shoe", "trainer", "slingback", "heel", "boot", "butter", "yellow", "cobalt"],
+      "sourceUrl": "https://www.dior.com/en_ie/fashion/womens-fashion/shoes/all-shoes-kahoona"
+    },
+    {
+      "id": "stine-goya",
+      "brand": "Stine Goya",
+      "label": "Colour on colour",
+      "statement": "Mix two saturated shades instead of treating one as the accent. A strong top and trouser pairing can do all the talking.",
+      "accessory": "Repeat one of the colours in a scarf or bag, or add a third small pop.",
+      "route": "Recombine two saturated colours already in your closet. An enduring accessory can give the pairing a new direction.",
+      "signals": ["cobalt", "blue", "orange", "tangerine", "purple", "fuchsia", "pink", "red"],
+      "sourceUrl": "https://us.stinegoya.com/pages/about"
+    }
+  ]
+}

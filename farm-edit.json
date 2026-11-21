@@ -1,0 +1,41 @@
+{
+  "brand": "FARM Rio",
+  "region": "Europe",
+  "season": "Autumn/Winter 2026",
+  "curatedOn": "2026-11-20",
+  "products": [
+    {
+      "id": "golden-nature-dress",
+      "kind": "dress",
+      "name": "Golden Nature Belted Long Sleeve Mini Dress",
+      "category": "The winter dress",
+      "image": "https://farmrio.eu/cdn/shop/files/farm-rio-golden-nature-mini-dress_368912_d9624ce2-f4bd-4544-9875-7e540a10905b.jpg?v=1790721883&width=800",
+      "url": "https://farmrio.eu/products/golden-nature-navy-blue-mini-dress",
+      "composition": "Viscose voile; percentage not listed",
+      "care": "Gentle wash; remove belt first",
+      "styling": "Wear the navy and gold print with tights, boots and a coat already in rotation."
+    },
+    {
+      "id": "sweetia-knit",
+      "kind": "shirt",
+      "name": "Barbour FARM Rio Sweetia Wool Jumper",
+      "category": "The colour knit",
+      "image": "https://farmrio.eu/cdn/shop/files/farm-rio-sweetia-polo-knit-sweater_372911.jpg?v=1792011474&width=800",
+      "url": "https://farmrio.eu/products/sweetia-knit",
+      "composition": "100% merino wool",
+      "care": "Hand wash separately",
+      "styling": "Let a pink knit brighten your dark trousers or sit beneath a patterned coat."
+    },
+    {
+      "id": "attalea-waxed-coat",
+      "kind": "layer",
+      "name": "Barbour FARM Rio Attalea Belted Waxed Jacket",
+      "category": "The statement layer",
+      "image": "https://farmrio.eu/cdn/shop/files/farm-rio-banana-groove-high-neck-wax-coat_372914.jpg?v=1792011345&width=800",
+      "url": "https://farmrio.eu/products/banana-groove-wax",
+      "composition": "100% waxed cotton outer; polyester sleeve lining",
+      "care": "Sponge clean only",
+      "styling": "Bring a countryside print over an outfit you already wear all winter."
+    }
+  ]
+}
