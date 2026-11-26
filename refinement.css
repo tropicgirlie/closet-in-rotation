@@ -374,3 +374,81 @@ main { padding-top: 34px; }
 @media (prefers-reduced-motion: reduce) {
   .wheel-swatch { transition: none; }
 }
+
+/* Keep an uploaded garment visible from hem to collar in the closet and outfit preview. */
+.visual img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.item-card .visual img,
+.look-tile .visual img,
+.detail-hero .visual img,
+.mini-visual .visual img { object-fit: contain; background: #fffaf5; }
+
+.save-product-photo { display: flex; align-items: flex-start; gap: 9px; margin: 11px 0 2px; color: #5d5058; font-size: 11px; line-height: 1.5; }
+.save-product-photo input { width: 16px; height: 16px; margin: 0; flex: none; accent-color: #642d47; }
+.save-product-photo[hidden] { display: none; }
+
+.mix-picker { margin-top: 23px; }
+.mix-picker > strong { display: block; margin-bottom: 10px; color: #642d47; font-size: 10px; letter-spacing: .16em; }
+.mix-buttons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+.mix-buttons button { display: flex; flex-direction: column; align-items: flex-start; min-height: 73px; padding: 12px 10px; border: 1px solid #bda9b0; border-radius: 12px 12px 20px 12px; background: #fffaf5; color: #392c35; text-align: left; cursor: pointer; transition: background .2s ease, transform .2s ease; }
+.mix-buttons button:hover { background: #f5e2e8; transform: translateY(-2px); }
+.mix-buttons button:focus-visible, .mix-quick:focus-visible { outline: 2px solid #a32663; outline-offset: 3px; }
+.mix-buttons button span { font-size: 10px; font-weight: 800; letter-spacing: .09em; }
+.mix-buttons button small { margin-top: 8px; color: #6d5f67; font-size: 10px; line-height: 1.3; }
+.mix-quick { margin-top: 15px; padding: 4px 0; border: 0; border-bottom: 1px solid #642d47; background: none; color: #642d47; font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+@media (max-width: 590px) {
+  .mix-buttons button { min-height: 68px; padding: 10px 8px; }
+  .mix-buttons button span, .mix-buttons button small { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mix-buttons button { transition: none; }
+}
+
+/* White gallery surfaces let the garments and colour wheel carry the colour. */
+:root { --paper: #fff; --card: #fff; --soft: #f7f5f3; }
+html, body { background: #fff; }
+.topbar, .side-nav { background: #fff; }
+.hero, .hero-copy { background-color: #fff; }
+.hero { border-bottom: 0; }
+.category-grid .category-card,
+.brand-card,
+.item-card,
+.metric,
+.insight-row,
+.circular-row { background: #fff; border: 0; box-shadow: none; }
+.category-grid .category-card:hover,
+.item-card:hover { box-shadow: none; }
+.category-card .category-image { border-radius: 12px 12px 24px 12px; }
+.category-info,
+.category-card:nth-child(2) .category-info,
+.category-card:nth-child(3) .category-info,
+.category-card:nth-child(4) .category-info { border-top: 0; }
+.category-info { padding: 18px 2px 10px; }
+.category-actions { border-top-color: #e8e2df; }
+.brand-card { border-bottom: 1px solid #ded8d6; border-radius: 0; }
+.brand-card-top,
+.brand-card.farm-rio .brand-card-top,
+.brand-card.zimmermann .brand-card-top,
+.brand-card.dior .brand-card-top,
+.brand-card.stine-goya .brand-card-top { background: #fff; color: #7b5063; border: 0; padding: 12px 0 0; }
+.brand-card-body { padding: 14px 0 20px; }
+.brand-card-foot { border-top: 1px solid #e8e2df; }
+.muse-desk { background: #fff; border: 0; border-top: 1px solid #ded8d6; border-bottom: 1px solid #ded8d6; border-radius: 0; padding: 38px 0; }
+.muse-empty, .muse-card { background: #fff; border: 0; border-bottom: 1px solid #e8e2df; border-radius: 0; }
+.muse-swatch { border-color: #fff; }
+.weather-card, .rotation-card, .look-builder, .intro, .metric { background: #fff; }
+.weather-card, .rotation-card { border: 0; border-bottom: 1px solid #ded8d6; border-radius: 0; padding-left: 0; padding-right: 0; }
+.look-builder { border: 0; border-top: 1px solid #ded8d6; border-radius: 0; padding-left: 0; padding-right: 0; }
+.look-result { background: #f9f7f6; border: 0; }
+.intro { border: 0; border-left: 3px solid #a32663; border-radius: 0; }
+.metric { border-radius: 0; border-bottom: 1px solid #ded8d6; }
+.metric:nth-child(1), .metric:nth-child(2), .metric:nth-child(3) { border-top: 0; }
+.item-card { border-radius: 0; border-bottom: 1px solid #e8e2df; }
+.item-card .visual { background: #fff !important; }
+.item-card .visual img { background: #fff; }
+.insight-row, .circular-row { border-radius: 0; border-bottom: 1px solid #e8e2df; }
+.sample-note { background: #fff; border-left: 3px solid #a32663; border-radius: 0; }
+.mobile-nav { background: #fff; }
+@media (max-width: 590px) {
+  .category-info { padding: 13px 1px 9px; }
+  .muse-desk { padding: 30px 0; }
+}
