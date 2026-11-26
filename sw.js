@@ -1,4 +1,4 @@
-const CACHE = 'closet-in-rotation-v16';
+const CACHE = 'closet-in-rotation-v18';
 const CORE = ['./','./index.html','./styles.css','./editorial.css','./refinement.css','./app.js','./trends.json','./brand-codes.json','./farm-edit.json','./icon.svg','./icon-192.png','./icon-512.png','./favicon-32.png','./apple-touch-icon.png','./manifest.webmanifest','./assets/editorial-picking.webp','./assets/editorial-hero.webp','./assets/editorial-lime.webp','./assets/editorial-cobalt.webp','./assets/editorial-orange.webp'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
